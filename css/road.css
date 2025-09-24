@@ -1,0 +1,95 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+main {
+    width: 70%;
+    margin: 0 auto;
+    height: auto;
+    padding-top: 20vh;
+}
+
+.roadmap h2 {
+    width: 33.33%;
+    background: linear-gradient(to right, #0004ff, #ffffff00);
+    margin-top: 6vh;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.roadmap p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+    margin-top: 2vh;
+    color: white;
+}
+
+.roadmap-container {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    gap: 10px;
+}
+
+.roadmap-item {
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.roadmap-item p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+    color: white;
+}
+
+.roadmap-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to right, #0004ff, #ffffff00);
+    transition-delay: all 1s;
+}
+
+.roadmap-item p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+}
+
+.roadmap-item a {
+    text-decoration: none;
+    color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+    main {
+        width: 95%;
+        padding-top: 10vh;
+    }
+
+    .roadmap h2 {
+        width: 95%;
+    }
+
+    .roadmap p {
+        font-size: 0.8rem;
+    }
+
+    .roadmap-container {
+        grid-template-columns: 100%;
+        gap: 15px;
+    }
+
+    .roadmap-item {
+        border: 2px solid white;
+    }
+
+}

@@ -1,0 +1,109 @@
+main {
+    width: 85%;
+    margin: 0 auto;
+    height: auto;
+    padding-top: 25vh;
+}
+
+.judul {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+#subjudul {
+    width: 35%;
+    background: linear-gradient(to right, #0004ff, #ffffff21);
+    margin-top: 6vh;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.des {
+    text-align: left;
+    line-height: 1.6;
+}
+
+.card-tutor {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.card-items {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card-items:hover {
+    transform: translateY(-10px);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    width: 30%;
+}
+
+.icon img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.description {
+    width: 70%;
+}
+
+.description h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.description p {
+    margin-top: 1vh;
+    font-size: 14px;
+    text-align: left;
+    color: #666;
+}
+
+.description a {
+    display: inline-block;
+    margin-top: 1vh;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+
+@media only screen and (max-width: 600px) {
+    main {
+        width: 95%;
+        padding-top: 20vh;
+    }
+
+    .judul {
+        font-size: 1.5rem;
+    }
+
+    #subjudul {
+        width: 95%;
+    }
+
+    .card-tutor {
+        grid-template-columns: 100%;
+    }
+
+    .icon {
+        width: 25%;
+    }
+}

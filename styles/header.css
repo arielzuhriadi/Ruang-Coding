@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    z-index: 100;
+}
+
+nav {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navTogle {
+    display: none;
+    margin-top: 2vh;
+    height: 50vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+#navTogle li {
+    list-style: none;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#navTogle li:hover {
+    background-color: rgb(55, 55, 55);
+}
+
+#navTogle li:hover a {
+    padding-left: 10px;
+    transition: 0.3s;
+}
+
+#navTogle li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+#btn-togle {
+    display: none;
+}
+
+nav #logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+
+#logo h1 {
+    color: white;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+#youtube {
+    background-color: red;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: 100;
+}
+
+#youtube:hover {
+    background-color: rgba(255, 0, 0, 0.646);
+    color: white;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    #btnTogle {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 15%;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    #togle {
+        width: 100%;
+        height: 4px;
+        background-color: white;
+    }
+
+    header {
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+    }
+
+    nav {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #logo img {
+        display: none;
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        border-radius: 100%;
+        border: 2px solid white;
+    }
+
+    #logo h1 {
+        color: white;
+        font-size: 24px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    #navTogle {
+        display: none;
+    }
+
+}

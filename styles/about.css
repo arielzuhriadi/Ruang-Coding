@@ -1,0 +1,98 @@
+.about {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#about .about-img {
+    flex: 1;
+    margin-right: 50px;
+}
+
+#about .about-img img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#about .about-text {
+    flex: 2;
+}
+
+#about .about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about .about-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+#about .about-text .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#about .about-text .btn:hover {
+    background-color: #0056b3;
+}
+
+
+.card-why {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 20px;
+}
+
+.card-items-why {
+    border: 2px solid black;
+    padding: 15px;
+}
+
+.card-items-why:hover {
+    background: linear-gradient(to right, #0004ff, #ffffff21);
+    color: white;
+    transition: all 0.5s;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    #about .about-img {
+        display: none;
+    }
+
+
+    #about .about-text h2 {
+        font-size: 2.5rem;
+    }
+
+    #about .about-text p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    .card-why {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
